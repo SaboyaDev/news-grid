@@ -4,6 +4,10 @@
 /* Small Mobile Double Column Grid*/
 /* *************************************** */
 @media only screen and (min-width: 601px) {
+  .container {
+    padding: 0 2rem;
+  }
+
   /* Main Navigation */
   #main-nav .container {
     grid-template-columns: auto 1fr auto;
@@ -36,7 +40,7 @@
 /* @media only screen and (min-width: 892px) { */
 @media only screen and (min-width: 892px) {
   .container {
-    padding: 0 2rem;
+    padding: 0 1.2rem;
   }
 
   #main-nav .container {
@@ -64,10 +68,6 @@
     margin-left: 2rem;
     padding: 0;
     font-size: 1rem;
-  }
-
-  #main-nav .menu li:last-child {
-    display: block;
   }
 
   #main-nav .menu li:not(:last-child) a {
