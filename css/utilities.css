@@ -1,0 +1,52 @@
+/* Utilities */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 1.2rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.category {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  font-size: 0.65rem;
+}
+
+.category-sports {
+  background: var(--sports-color);
+}
+.category-ent {
+  background: var(--ent-color);
+}
+.category-tech {
+  background: var(--tech-color);
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+.btn-secondary {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+.btn-dark {
+  color: var(--white);
+  background-color: var(--black);
+}

@@ -11,14 +11,18 @@
 		crossorigin="anonymous"></script>
 
 	<!-- Styling -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/utilities.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/responsive.css">
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
 		rel="stylesheet">
+
+	<script src="main.js"></script>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -28,31 +32,60 @@
 <body>
 	<nav id="main-nav">
 		<div class="container">
+			<!-- Logo -->
 			<img src="./images/logo.png" alt="NewsGrid" class="logo">
+			<!-- Social Icons -->
 			<div class="social">
 				<a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
-					<i class="fa-brands fa-facebook fa-2x"></i>
+					<i class="fa-brands fa-facebook"></i>
 				</a>
 				<a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
-					<i class="fa-brands fa-twitter fa-2x"></i>
+					<i class="fa-brands fa-twitter"></i>
 				</a>
 				<a href="http://instagram.com" target="_blank"
 					rel="noopener noreferrer">
-					<i class="fa-brands fa-instagram fa-2x"></i>
+					<i class="fa-brands fa-instagram"></i>
 				</a>
 				<a href="http://youtube.com" target="_blank" rel="noopener noreferrer">
-					<i class="fa-brands fa-youtube fa-2x"></i>
+					<i class="fa-brands fa-youtube"></i>
 				</a>
 			</div>
-			<ul>
-				<li><a href="index.html" class="current">Home</a></li>
-				<li><a href="about.html">About</a></li>
+			<!-- Hamburger Menu BTN Hack -->
+			<div class="hamburger-menu">
+				<input type="checkbox" id="menu-toggle" />
+				<label id="click-btn" for="menu-toggle" class="menu-btn-container">
+					<div class="menu-btn"></div>
+				</label>
+			</div>
+			<!-- Menu Items -->
+			<ul class="menu">
+				<li><a href="index.html" class="current">home</a></li>
+				<li><a href="about.html">latest</a></li>
+				<li><a href="about.html">contact us</a></li>
+				<li><a href="index.html" class="btn btn-dark no-mobile">sign up!</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
 
 	<!-- Showcase -->
-	<header id="showcase"></header>
+	<header id="showcase">
+		<div class="container">
+			<div class="showcase-container">
+				<div class="showcase-content">
+					<div class="category category-sports">sports</div>
+					<h1>some sports article</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+						rerum officia
+						quibusdam mollitia deserunt animi soluta laudantium. Quam sapiente a
+						dolorum
+						magnam necessitatibus quis tempore facere totam. Dolor, sequi
+						distinctio!</p>
+					<a href="" class="btn btn-primary my-1">read more</a>
+				</div>
+			</div>
+		</div>
+	</header>
 
 	<!-- Home Articles -->
 	<section id="home-articles" class="py-2"></section>
@@ -60,6 +93,7 @@
 	<!-- Footer -->
 	<footer id="main-footer" class="py-2"></footer>
 
+	<script src="./main.js"></script>
 </body>
 
 </html>
