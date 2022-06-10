@@ -2,20 +2,31 @@
 .container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 0 1.2rem;
+  padding: 0 2rem;
 }
 
+/* Custom Margins and Paddings */
 .my-1 {
   margin: 1rem 0;
 }
 
+.p-btm-1 {
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+/* Categories */
 .category {
   display: inline-block;
-  text-transform: uppercase;
+  margin: 0 0 1.2rem;
   padding: 0.4rem 0.6rem;
-  margin: 1rem 0;
   border-radius: 15px;
-  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: var(--white);
 }
 
 .category-sports {
@@ -28,25 +39,47 @@
   background: var(--tech-color);
 }
 
-/* Button */
+/* Buttons */
 .btn {
   display: inline-block;
   text-transform: capitalize;
   padding: 0.5rem 1.5rem;
+  border: none;
   border-radius: 5px;
 }
 
 .btn-primary {
-  color: var(--white);
   background: var(--primary-color);
+  color: var(--white);
 }
 
 .btn-secondary {
-  color: var(--white);
   background-color: var(--secondary-color);
+  color: var(--white);
 }
 
 .btn-dark {
-  color: var(--white);
   background-color: var(--black);
+  color: var(--white);
+}
+
+/* Cards */
+.card {
+  padding: 1rem;
+  background: var(--white);
+}
+
+.card > img:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* Backgrounds */
+.bg-dark {
+  background: var(--dark-color);
+  color: var(--white);
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: var(--white);
 }
