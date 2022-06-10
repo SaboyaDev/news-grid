@@ -83,3 +83,7 @@
   background: var(--primary-color);
   color: var(--white);
 }
+
+.l-heading {
+  font-size: 3rem;
+}

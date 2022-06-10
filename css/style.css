@@ -139,7 +139,7 @@
 /*** Footer ***/
 /* *************************************** */
 #main-footer {
-  background: var(--dark-color);
+  background: var(--black);
 }
 
 #main-footer,
@@ -175,7 +175,7 @@
 
 #main-footer .site-links li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.225);
 }
 
 /* Footer Copyrights */
@@ -185,4 +185,19 @@
 
 #main-footer .copy-right p {
   text-transform: capitalize;
+}
+
+/* About Page */
+#about {
+  margin-top: 11.5%;
+}
+
+#about .grid-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+#about aside {
+  text-align: center;
 }

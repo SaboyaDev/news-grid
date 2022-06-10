@@ -19,7 +19,11 @@
   }
 
   #main-nav .social i {
-    color: var(--light-gray);
+    color: var(--dark-color);
+  }
+
+  #main-nav .social i:hover {
+    color: var(--primary-color);
   }
 
   /* Showcase */
@@ -44,6 +48,16 @@
 
   #main-footer .container > :last-child p {
     margin-bottom: 0;
+  }
+
+  /* About Page */
+  #about .grid-container {
+    grid-template-columns: 5fr 2fr;
+    /* grid-template-rows: repeat(3, 1fr); */
+  }
+
+  #about .grid-container > :first-child {
+    grid-row: 1 / 4;
   }
 }
 
@@ -107,6 +121,7 @@
     padding: 0 0.3rem 0.2rem;
   }
 
+  #main-nav .menu li:not(:last-child) a.current,
   #main-nav .menu li:not(:last-child) a:hover {
     border-bottom: 4px solid var(--primary-color);
   }
